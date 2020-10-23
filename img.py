@@ -2,21 +2,21 @@ importar  os
 from  flask  import  Flask , jsonify , request
 from  math  import  sqrt
 
-app  =  Flask (__name__)
+app  =  Flask(__name__)
 
-@ app . rota ( '/' )
-def  nao_entre_em_panico ():
+@app.route('/')
+def  nao_entre_em_panico():
     proximo  =  1
     anterior  =  0
     limite  =  98
     encontrado  =  0
     resposta  =  "1, \ n "
-    while ( encontrado  <  limite ):
+    while (encontrado  <  limite):
         tmp  =  proximo
-        proximo  =  proximo  +  anterior
-        anterior  =  tmp
-        encontrado  =  encontrado + 1
-        resposta + =  str ( proximo ) +  ", \ n "
+        proximo = proximo + anterior
+        anterior = tmp
+        encontrado = encontrado + 1
+        resposta +=  str ( proximo ) +  ", \ n "
         
      resposta de retorno
 
