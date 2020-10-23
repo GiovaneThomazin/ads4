@@ -2,7 +2,7 @@ importar  os
 from  flask  import  Flask , jsonify , request
 from  math  import  sqrt
 
-app  =  Flask ( __name__ )
+app  =  Flask (__name__)
 
 @ app . rota ( '/' )
 def  nao_entre_em_panico ():
