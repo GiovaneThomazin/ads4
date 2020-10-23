@@ -20,6 +20,6 @@ def  nao_entre_em_panico ():
         
      resposta de retorno
 
-if  _name_  ==  "__main__" :
+if  __name__  ==  "__main__" :
     porta  =  int ( os . amb . get ( "PORT" , 5000 ))
     app . executar ( host = '0.0.0.0' , porta = porta )
